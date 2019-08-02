@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="av8-4f-4cY">
-                                <rect key="frame" x="0.0" y="40" width="375" height="100.5"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="430.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gym Routine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Km-eT-r9J">
                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="20.5"/>
@@ -36,7 +36,20 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvZ-8N-mEN">
                                         <rect key="frame" x="0.0" y="70.5" width="151" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfR-10-0ok"/>
+                                        </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="DefaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ehg-zv-uBE">
+                                        <rect key="frame" x="0.0" y="110.5" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ehg-zv-uBE" secondAttribute="height" multiplier="1:1" id="lFQ-Zh-HMw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="yI2-ry-mcK" appends="YES" id="OgI-W7-TIP"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pTZ-cw-413" secondAttribute="trailing" id="wOa-ob-7cA"/>
@@ -51,10 +64,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="GymPlannerLabel" destination="4Km-eT-r9J" id="nKe-vk-dHh"/>
+                        <outlet property="NameTextField" destination="pTZ-cw-413" id="3m7-6u-kCq"/>
+                        <outlet property="photoImageView" destination="Ehg-zv-uBE" id="SWW-0D-rbU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yI2-ry-mcK">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="zu3-Kv-oGc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DefaultPhoto" width="360" height="360"/>
+    </resources>
 </document>
