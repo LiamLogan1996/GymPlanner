@@ -14,6 +14,8 @@
 		0C6DEE0522EFB84F00CA8CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6DEE0322EFB84F00CA8CC4 /* LaunchScreen.storyboard */; };
 		0C6DEE1022EFB84F00CA8CC4 /* GymPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DEE0F22EFB84F00CA8CC4 /* GymPlannerTests.swift */; };
 		0C6DEE1B22EFB84F00CA8CC4 /* GymPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DEE1A22EFB84F00CA8CC4 /* GymPlannerUITests.swift */; };
+		0C6DEE3822F4514C00CA8CC4 /* Dumbell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6DEE3722F4514C00CA8CC4 /* Dumbell.png */; };
+		0C6DEE3A23097C0000CA8CC4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DEE3923097C0000CA8CC4 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0C6DEE1622EFB84F00CA8CC4 /* GymPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6DEE1A22EFB84F00CA8CC4 /* GymPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymPlannerUITests.swift; sourceTree = "<group>"; };
 		0C6DEE1C22EFB84F00CA8CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6DEE3722F4514C00CA8CC4 /* Dumbell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dumbell.png; path = ../../../Downloads/Dumbell.png; sourceTree = "<group>"; };
+		0C6DEE3923097C0000CA8CC4 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				0C6DEDFA22EFB84E00CA8CC4 /* AppDelegate.swift */,
 				0C6DEDFC22EFB84E00CA8CC4 /* ViewController.swift */,
+				0C6DEE3923097C0000CA8CC4 /* RatingControl.swift */,
 				0C6DEDFE22EFB84E00CA8CC4 /* Main.storyboard */,
 				0C6DEE0122EFB84F00CA8CC4 /* Assets.xcassets */,
 				0C6DEE0322EFB84F00CA8CC4 /* LaunchScreen.storyboard */,
 				0C6DEE0622EFB84F00CA8CC4 /* Info.plist */,
+				0C6DEE3722F4514C00CA8CC4 /* Dumbell.png */,
 			);
 			path = GymPlanner;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			files = (
 				0C6DEE0522EFB84F00CA8CC4 /* LaunchScreen.storyboard in Resources */,
 				0C6DEE0222EFB84F00CA8CC4 /* Assets.xcassets in Resources */,
+				0C6DEE3822F4514C00CA8CC4 /* Dumbell.png in Resources */,
 				0C6DEE0022EFB84E00CA8CC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6DEDFD22EFB84E00CA8CC4 /* ViewController.swift in Sources */,
+				0C6DEE3A23097C0000CA8CC4 /* RatingControl.swift in Sources */,
 				0C6DEDFB22EFB84E00CA8CC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

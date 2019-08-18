@@ -55,6 +55,10 @@
                                     <constraint firstAttribute="trailing" secondItem="pTZ-cw-413" secondAttribute="trailing" id="wOa-ob-7cA"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Xy-8i-ina" customClass="RatingControl" customModule="GymPlanner" customModuleProvider="target">
+                                <rect key="frame" x="16" y="511" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
